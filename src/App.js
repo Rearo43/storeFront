@@ -1,30 +1,20 @@
-import React from 'react';
+import React from "react";
+import CurrentCategory from "./components/storefront/current-category.js";
+import Categories from "./components/storefront/categories.js";
+import Header from './components/Header/';
+import Footer from './components/Footer/';
+import Products from './components/storefront/sfProducts.js';
 
-import Current from './store/current-cat'
-
-
-function App() {
+export default function Album() {
   return (
-    <Current />
-  )
+    <>
+      <Header />
+      <main>
+        <Categories />
+        <CurrentCategory />
+        <Products />
+      </main>
+      <Footer />
+    </>
+  );
 }
-
-
-// import React from 'react';
-// import './App.css';
-// import Header from './components/Header/index'
-// import Main from './components/Main/index'
-// import Footer from './components/Footer/index'
-
-// function App() {
-//   return (
-//     <div className="App">
-//       <Header />
-//       <App />
-//       <Footer />
-
-//     </div>
-//   );
-// }
-
-export default App;
