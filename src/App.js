@@ -1,25 +1,20 @@
-import React from 'react';
-
-import CssBaseline from '@material-ui/core/CssBaseline';
-
-import CurrentCategory from './components/storefront/current-category.js';
-import Categories from './components/storefront/categories.js';
-import Products from './components/storefront/products.js';
-// import Header from './components/header/header.js';
-// import Footer from './components/footer/footer.js';
+import React from "react";
+import CurrentCategory from "./components/storefront/current-category.js";
+import Categories from "./components/storefront/categories.js";
+import Header from './components/Header/';
+import Footer from './components/Footer/';
+// import Products from './components/storefront/products.js';
 
 export default function Album() {
-
   return (
     <>
-      <CssBaseline />
-      {/* <Header /> */}
+      <Header />
       <main>
         <Categories />
         <CurrentCategory />
-        <Products />
+        {/* <Products /> */}
       </main>
-      {/* <Footer /> */}
+      <Footer />
     </>
   );
 }
