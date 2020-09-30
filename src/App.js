@@ -1,30 +1,25 @@
 import React from 'react';
 
-import Current from './store/current-cat'
+import CssBaseline from '@material-ui/core/CssBaseline';
 
+import CurrentCategory from './components/storefront/current-category.js';
+import Categories from './components/storefront/categories.js';
+import Products from './components/storefront/products.js';
+// import Header from './components/header/header.js';
+// import Footer from './components/footer/footer.js';
 
-function App() {
+export default function Album() {
+
   return (
-    <Current />
-  )
+    <>
+      <CssBaseline />
+      {/* <Header /> */}
+      <main>
+        <Categories />
+        <CurrentCategory />
+        <Products />
+      </main>
+      {/* <Footer /> */}
+    </>
+  );
 }
-
-
-// import React from 'react';
-// import './App.css';
-// import Header from './components/Header/index'
-// import Main from './components/Main/index'
-// import Footer from './components/Footer/index'
-
-// function App() {
-//   return (
-//     <div className="App">
-//       <Header />
-//       <App />
-//       <Footer />
-
-//     </div>
-//   );
-// }
-
-export default App;
