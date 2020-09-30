@@ -3,7 +3,7 @@ import CurrentCategory from "./components/storefront/current-category.js";
 import Categories from "./components/storefront/categories.js";
 import Header from './components/Header/';
 import Footer from './components/Footer/';
-// import Products from './components/storefront/products.js';
+import Products from './components/storefront/sfProducts.js';
 
 export default function Album() {
   return (
@@ -12,7 +12,7 @@ export default function Album() {
       <main>
         <Categories />
         <CurrentCategory />
-        {/* <Products /> */}
+        <Products />
       </main>
       <Footer />
     </>

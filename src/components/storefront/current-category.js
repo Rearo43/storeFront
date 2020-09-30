@@ -2,12 +2,12 @@ import React from "react";
 import { connect } from "react-redux";
 import { When } from "react-if";
 
-const CurrentCategory = ({ activeCategory }) => {
+const CurrentCategory = ({ activeCategory, activeDescription }) => {
   return (
     <When condition={!!activeCategory}>
       <div>
         <h3>{activeCategory}</h3>
-        <p>Category Description</p>
+        <p>{activeDescription}</p>
       </div>
     </When>
   );
